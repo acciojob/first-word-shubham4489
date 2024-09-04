@@ -1,17 +1,18 @@
 function firstWord(s){
   // your code here
-	if (!s){
+	if (!s) {
 	return '';
 	}
 	
-	 s=s.trim();
+	 s = s.trim();
+	
 	 const spaceIndex=s.indexOf(' ');
 
-	if (spaceIndex)===-1{
+	if (spaceIndex)=== -1{
 	return s;
 	} 
   return s.substring(0,spaceIndex);
-// Do not change the code below
 }
+// Do not change the code below
 const s = prompt("Enter String:");
  alert(firstWord(s));    
