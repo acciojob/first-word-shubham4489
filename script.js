@@ -1,17 +1,17 @@
-function firstWord(s) :
+function firstWord(s){
   // your code here
-	if not s:
-	return ''
+	if (!s){
+	return '';
+	}
 	
-	 s=s.strip()
-	space_index=s.find(' ')
+	 s=s.trim();
+	 const spaceIndex=s.indexOf(' ');
 
-	if space_index=-1:
+	if (spaceIndex)===-1{
 	return s;
-	  
-
-return s[:space_index]
+	} 
+  return s.substring(0,spaceIndex);
 // Do not change the code below
-
+}
 const s = prompt("Enter String:");
-alert(firstWord(s));   
+ alert(firstWord(s));    
