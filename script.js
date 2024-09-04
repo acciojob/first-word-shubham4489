@@ -8,7 +8,7 @@ function firstWord(s){
 	
 	 const spaceIndex=s.indexOf(' ');
 
-	if (spaceIndex)=== -1{
+	if (spaceIndex=== -1){
 	return s;
 	} 
   return s.substring(0,spaceIndex);
